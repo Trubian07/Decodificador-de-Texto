@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador de texto Lucas</title>
+</head>
+<body>
+    <header>
+        <h1 div class="title">DECODIFICADOR DE TEXTO</h1>
+    </header>
+    <main>
+        <div class="input-container">
+            <input type="text" id="text-input" placeholder="Digite seu texto aqui">
+            <div id="error-message" class="error-message"></div>
+            <div class="buttons">
+                <button class="encrypt-button" onclick="encryptText()">Criptografar</button>
+                <button class="decrypt-button" onclick="decryptText()">Descriptografar</button>
+            </div>
+        </div>
+        <div class="output-container">
+            <textarea id="encrypted-output" readonly placeholder="Digite um texto que você deseja criptografar ou descriptografar. "></textarea>
+            <button class="copy-button" onclick="copyToClipboard()">Copiar</button>
+        </div>
+    </main>
+
+    <div class="container">
+        <div class="message">
+            Digite apenas letras minúsculas e sem acento.
+        </div>
+    </div>
+    <script src="app.js" defer></script>
+</body>
+</html>
